@@ -73,6 +73,26 @@ public class SingleChainList {
     }
 
     /*
+    *  反转链表, 使用2个指针pre temp;
+    * */
+    public Node reversal() {
+        Node pre = null;
+        Node temp = null;
+        Node currnet = head;
+        while(currnet != null) {
+            //记录当前节点的下一个节点
+            temp = currnet.next;
+            //然后将当前节点指向pre
+            currnet.next = pre;
+            //pre和cur节点都前进到一位
+            pre = currnet;
+            currnet = temp;
+        }
+        head = pre;
+        return pre;
+    }
+
+    /*
     * 显示所有的节点
     * */
     public void display() {

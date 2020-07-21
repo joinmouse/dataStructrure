@@ -25,5 +25,9 @@ public class TestSingleChainList {
         // 删除第6个元素
         list.removeNode(6);
         list.display();
+
+        // 反转链表
+        list.reversal();
+        list.display();
     }
 }
