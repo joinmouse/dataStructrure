@@ -93,6 +93,47 @@ public class SingleChainList {
     }
 
     /*
+    * 快慢指针, 求链表倒数的某个
+    * */
+    public Node formEnd(int index) {
+        Node slow = null;
+        Node fast = null;
+        Node slowCurrent = head;
+        Node fastCurrent = head;
+        // 先让快指针跑5个
+        while (index > 0) {
+            fastCurrent = fastCurrent.next;
+            index--;
+        }
+        // 快慢指针同时走
+        while (fastCurrent != null) {
+            fastCurrent = fastCurrent.next;
+            slowCurrent = slowCurrent.next;
+        }
+        System.out.println(slowCurrent.data);
+        return slowCurrent;
+    }
+
+    /*
+     * 快慢指针, 求链表中间的数字
+    * */
+    public Node middleNode() {
+        Node slow = null;
+        Node fast = null;
+        Node slowCurrent = head;
+        Node fastCurrent = head;
+        while (fastCurrent.next != null && fastCurrent.next.next != null) {
+            // 处理最后的边界情况
+            slowCurrent = slowCurrent.next;
+            fastCurrent = fastCurrent.next.next;
+            // System.out.println(fastCurrent.data);
+            // System.out.println(slowCurrent.data);
+        }
+        System.out.println(slowCurrent.data);
+        return slowCurrent;
+    }
+
+    /*
     * 显示所有的节点
     * */
     public void display() {

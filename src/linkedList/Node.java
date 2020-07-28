@@ -2,7 +2,7 @@ package linkedList;
 
 public class Node {
     Node next;
-    int data;
+    public int data;
     /*
     * 初始化节点
     * */

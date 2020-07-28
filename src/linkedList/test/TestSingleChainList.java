@@ -1,8 +1,7 @@
 package linkedList.test;
 
+import linkedList.Node;
 import linkedList.SingleChainList;
-
-import java.lang.reflect.Array;
 
 public class TestSingleChainList {
     public static void main(String[] args) {
@@ -29,5 +28,21 @@ public class TestSingleChainList {
         // 反转链表
         list.reversal();
         list.display();
+
+        /*
+        * 求链表倒数第 n 个结点（链表为常规单链表，没有记录长度）。
+        * 示例：[6, 20, 1, 12, 9, 19, 14, 2, 18, 5, 11, 3, 13, 4, 15, 7, 8, 16, 17, 10]求倒数第5个结点
+        */
+        System.out.println("链表的倒数第5个: ");
+        list.formEnd(5);
+
+        /*
+        * 求链表的中间结点（链表为常规单链表，没有记录长度）。
+        * 示例：[6, 20, 1, 12, 9, 19, 14, 2, 18, 5, 11, 3, 13, 4, 15, 7, 8, 16, 17, 10]
+        * */
+        System.out.println("链表中间的数字: ");
+        list.addNode(99);
+        list.display();
+        list.middleNode();
     }
 }
