@@ -116,7 +116,7 @@ public class SingleChainList {
 
     /*
      * 快慢指针, 求链表中间的数字
-    * */
+    */
     public Node middleNode() {
         Node slow = null;
         Node fast = null;
@@ -135,7 +135,7 @@ public class SingleChainList {
 
     /*
     * 显示所有的节点
-    * */
+    */
     public void display() {
         if(head == null) {
             System.out.println("当前链表是空链表");
