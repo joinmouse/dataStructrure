@@ -4,20 +4,16 @@ package sort;
 // https://images2017.cnblogs.com/blog/849589/201710/849589-20171015225645277-1151100000.gif
 public class Insert {
     public static int[] sort(int arr[]) {
-        // 排序
-        for(int i=0; i<arr.length-1; i++) {
-            int j = i;
-            while (j > 0) {
-                if(arr[j] < arr[j-1]) {
-                    int temp ;
-                    temp = arr[j];
-                    arr[j] = arr[j-1];
-                    arr[j-1] = temp;
-                    j--;
-                }else {
-                    break;
-                }
+        for(int i=1; i<arr.length; i++) {
+            int currentVal = arr[i];
+            // insert a[i] into the sorted arr
+            int j = i-1;
+            while (j>=0 && arr[j] > currentVal) {
+                arr[j+1] = arr[j];
+                j = j-1;
             }
+            // j退出循环前-1了，因此这里是a[j+1]
+            arr[j+1] = currentVal;
         }
         return arr;
     }
