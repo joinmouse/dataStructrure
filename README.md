@@ -1,6 +1,8 @@
-## Java版 数据结构与算法学习笔记
+## Java版 数据结构与算法笔记
 
-### 链表 
-1、实现单项链表的增删改查
-
-源码目录: src/linkedList
+### 目录结构
+- src/linkedList: 链表操作
+- src/search: 二分查找
+- src/sort: 排序算法
+----
+- test: 测试代码

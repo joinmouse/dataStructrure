@@ -1,4 +1,4 @@
-package test;
+package test.linkedList;
 
 import linkedList.LoopList;
 import linkedList.Node;

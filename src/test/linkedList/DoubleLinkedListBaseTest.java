@@ -1,4 +1,4 @@
-package test;
+package test.linkedList;
 
 import linkedList.DoubleLinkedList;
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;

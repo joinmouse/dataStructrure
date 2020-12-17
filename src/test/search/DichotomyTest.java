@@ -1,4 +1,4 @@
-package test;
+package test.search;
 
 import search.Dichotomy;
 
