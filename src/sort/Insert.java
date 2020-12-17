@@ -1,9 +1,9 @@
 package sort;
 
-// 插入排序 insert sort
+// 插入排序 Insert sort
 // https://images2017.cnblogs.com/blog/849589/201710/849589-20171015225645277-1151100000.gif
 public class Insert {
-    public static int[] sort(int arr[]) {
+    public int[] sort(int arr[]) {
         for(int i=1; i<arr.length; i++) {
             int currentVal = arr[i];
             // insert a[i] into the sorted arr

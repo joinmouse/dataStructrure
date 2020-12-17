@@ -1,7 +1,5 @@
 package sort;
 
-import com.sun.deploy.util.ArrayUtil;
-
 // 归并排序
 public class Merge {
     public void merge(int[] arr, int p, int q, int r)  {
