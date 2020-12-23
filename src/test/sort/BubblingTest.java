@@ -19,8 +19,8 @@ public class BubblingTest {
         s2 = list.toArray(new Integer[0]);
         System.out.println(Arrays.toString(s1));
         System.out.println(Arrays.toString(s2));
-//        int s1[] = {2,3,5,6,1,11,12,13};
-//        int s2[] = {2,3,5,6,1,11,12,13};
+        // int s1[] = {2,3,5,6,1,11,12,13};
+        // int s2[] = {2,3,5,6,1,11,12,13};
         Bubbling bubbling = new Bubbling();
         // 简单的冒泡排序
         Integer[] result1 = bubbling.sort(s1);

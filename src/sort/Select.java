@@ -23,7 +23,7 @@ public class Select {
                 min = temp;
             }
         }
-        // 将min放在index=start位置上
+        /* 将min放在index=start位置上 */
         arr[start] = min;
         return sort(arr, start+1);
     }
