@@ -25,8 +25,8 @@ public class SingleChainListTest {
         list.display();
 
         // 反转链表
-        list.reversal();
-        list.display();
+        // list.reversal();
+        // list.display();
 
         /*
          * 求链表倒数第 n 个结点（链表为常规单链表，没有记录长度）。

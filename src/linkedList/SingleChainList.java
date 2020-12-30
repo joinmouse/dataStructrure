@@ -1,8 +1,9 @@
 package linkedList;
 
+import java.util.List;
+
 public class SingleChainList {
     Node head = null;
-
     /*
     * 尾部添加节点 O(n)
     * */
@@ -20,7 +21,6 @@ public class SingleChainList {
         }
         currentNode.next = newNode;
     }
-
     /*
      * 头部添加节点 O(1)
      * */
@@ -75,7 +75,7 @@ public class SingleChainList {
     /*
     *  反转链表, 使用2个指针pre temp;
     * */
-    public Node reversal() {
+    public Node reverseList(Node head) {
         Node pre = null;
         Node temp = null;
         Node currnet = head;
