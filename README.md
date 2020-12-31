@@ -1,7 +1,7 @@
 ## Java版 数据结构与算法笔记
 
 ### 目录结构
-- src/linkedList: 链表操作 LRU算法
+- src/linkedList: 链表的基本操作、LRU算法
 - src/search: 二分查找算法
 - src/sort: 排序算法
   - 选择排序 O(n^2)
